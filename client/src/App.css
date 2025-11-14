@@ -1,0 +1,116 @@
+/* Fundo geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #111;
+  color: #f2f2f2;
+
+  /* IMPORTANTE: centralização */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container geral */
+.App {
+  width: 100%;
+  max-width: 600px;
+
+  /* centraliza tudo dentro dele */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Título principal */
+.App h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #00d8ff;
+}
+
+/* Card estilo moderno */
+.card {
+  background-color: #1b1b1b;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  border: 1px solid #333;
+  text-align: left;
+}
+
+/* Títulos dos cards */
+.card h2 {
+  margin-top: 0;
+  color: #00d8ff;
+  font-size: 24px;
+}
+
+/* Inputs */
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Inputs focados */
+.card input:focus {
+  outline: none;
+  border-color: #00d8ff;
+}
+
+/* Botões */
+.card button {
+  background-color: #00d8ff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+/* Hover dos botões */
+.card button:hover {
+  background-color: #00b6d4;
+}
+
+/* Botão carregando */
+.card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Mensagens */
+.success {
+  color: #00ff9d;
+}
+
+.error {
+  color: #ff6464;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* Resultado da rota privada */
+pre {
+  background-color: #000;
+  padding: 15px;
+  border-radius: 10px;
+  color: #0f0;
+  overflow-x: auto;
+  border: 1px solid #333;
+}
